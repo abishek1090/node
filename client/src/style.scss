@@ -1,0 +1,465 @@
+$FontStyle:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+'Lucida Sans', Arial, sans-serif;
+
+.auth {
+  .heading {
+    font-size: 70px;
+    font-family: $FontStyle;
+    //height: 110vh;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //height: 90vh;
+  font-family: $FontStyle;
+  background-image: url('../public/images/login.jpg');
+
+  background-size: cover;
+  height: 728px;
+
+  h1 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    font-family:$FontStyle ;
+    background-color: whitesmoke;
+
+    width: 350px;
+    gap: 20px;
+
+    input {
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid gray;
+    }
+
+    span {
+      font-family:$FontStyle;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      background-color: black;
+      cursor: pointer;
+      color: white;
+    }
+
+    p {
+      font-size: 12px;
+      color: red;
+      text-align: center;
+    }
+
+    span {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .google_btn {
+      width: 230px;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      background-color: white;
+      box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
+        rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0 0 20px 0;
+      color: #2c444e;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+  }
+}
+.modalheader {
+  background-color: rgb(239, 243, 231);
+  color: black;
+  border-radius: 30px;
+}
+
+.createpost {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: $FontStyle;
+  .topic {
+    height: 100px;
+  }
+  .description {
+    height: 300px;
+  }
+  textarea::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
+.body {
+  width: 1024px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  .nav {
+    background-color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    font-family:$FontStyle;
+
+    .name {
+      color: white;
+      font-size: large;
+    }
+
+    h6 {
+      color: white;
+      text-decoration: none;
+      font-family: $FontStyle;
+    }
+
+    .create {
+      font-family:$FontStyle;
+
+      .createInside {
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        background-color: white;
+        font-size: 25px;
+      }
+    }
+
+    .other {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      font-size: 25px;
+      gap: 100px;
+      .otherInside {
+        text-decoration: none;
+        background-color: black;
+      }
+      .accountMenu {
+        .accountButton {
+          color: white;
+        }
+        .dropdown {
+          display: none;
+          position: relative;
+          background-color: black;
+          font-family:$FontStyle;
+          height: 100px;
+          z-index: 1;
+          .insideAccount {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+      .accountMenu:hover .dropdown {
+        display: block;
+      }
+      .accountMenu:hover .accountButton {
+        background-color: black;
+      }
+    }
+  }
+  .main {
+    background-color: rgb(239, 243, 231);
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    .topicLink {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: rgb(184, 83, 83);
+      }
+    }
+    .mainInside {
+      margin-left: 10px;
+      margin-right: 9px;
+      .profileandTime {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        .nameAndDate {
+          .insideNameAndDate {
+            color: black;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.single {
+  width: 1024px;
+  margin-left: 250px;
+  display: flex;
+
+  flex-direction: column;
+  .singleTopic {
+    background-color: black;
+    color: white;
+    padding: 20px;
+
+    border-radius: 20px;
+    font-family:$FontStyle;
+  }
+  .singleDesc {
+    background-color: rgb(239, 243, 231);
+    color: black;
+
+    border-radius: 30px;
+    padding: 20px;
+  }
+}
+.modalBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+}
+.profile {
+  width: 1024px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .header {
+    background-color: black;
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    .buttonProfile {
+      height: 40px;
+    }
+  }
+  .header1 {
+    background-color: black;
+    padding: 20px;
+    font-family:$FontStyle;
+    font-size: x-large;
+    border-radius: 30px;
+
+    color: white;
+  }
+  .main {
+    background-color: rgb(239, 243, 231);
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    .topicLink {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: rgb(184, 83, 83);
+      }
+    }
+    .deleteButton {
+      margin-left: '20px';
+      &:hover {
+        color: rgb(255, 0, 0);
+      }
+    }
+  }
+}
+.comment-stack {
+  margin: 0.5rem 0;
+}
+
+.comment-stack:last-child {
+  margin-bottom: 0;
+}
+
+.comment {
+  padding: 0.5rem;
+  background-color: rgb(239, 243, 231);
+  border-radius: 0.5rem;
+}
+
+.comment .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+  font-size: 0.75em;
+}
+
+.comment .header .name {
+  font-weight: bold;
+}
+
+.comment .message {
+  white-space: pre-wrap;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.comment .footer {
+  display: flex;
+  gap: 10px;
+  margin-top: 0.5rem;
+  .button {
+    background-color: black;
+    color: white;
+    padding: 2px;
+    border-radius: 10px;
+  }
+}
+
+.nested-comments {
+  padding-left: 0.5rem;
+  flex-grow: 1;
+}
+
+.nested-comments-stack {
+  display: flex;
+}
+
+.collapse-line {
+  border: none;
+  background: none;
+  padding: 0;
+  width: 15px;
+  margin-top: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transform: translateX(-50%);
+}
+
+.collapse-line:hover::before,
+.collapse-line:focus-visible::before {
+  background-color: hsl(235, 100%, 60%);
+}
+
+.collapse-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: hsl(0, 0%, 0%);
+  transition: background-color 100ms ease-in-out;
+}
+
+.hide {
+  display: none;
+}
+
+.btn {
+  --hue: 235;
+  padding: 0.5em 1em;
+  background: var(--color);
+  border: none;
+  color: white;
+  border-radius: 0.5em;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  --color: hsl(var(--hue), 100%, 74%);
+}
+
+.btn.icon-btn {
+  background: none;
+  color: var(--color);
+  padding: 0.25em;
+  display: flex;
+  align-items: center;
+}
+
+.mr-1 {
+  margin-right: 0.25em;
+}
+
+.icon-btn:hover,
+.icon-btn:focus-visible {
+  --color: hsl(var(--hue), 100%, 74%);
+}
+
+.icon-btn-active,
+.icon-btn.danger {
+  --hue: 0;
+}
+
+.icon-btn-active {
+  position: relative;
+}
+
+.icon-btn-active::before {
+  content: '\00D7';
+  position: absolute;
+  font-size: 0.75em;
+  width: 1em;
+  height: 1em;
+  color: white;
+  background-color: var(--color);
+  border-radius: 50%;
+  bottom: 0.1em;
+  right: 0.1em;
+}
+
+.ml-3 {
+  margin-left: 1.5rem;
+}
+
+.btn[disabled] {
+  --color: hsl(var(--hue), 20%, 74%);
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.comment-form-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.message-input {
+  flex-grow: 1;
+  resize: none;
+  height: 70px;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  font-size: inherit;
+  font-family:$FontStyle;
+  border: 2px solid hsl(235, 50%, 74%);
+  line-height: 1.4;
+}
+
+.message-input:focus {
+  border-color: hsl(0, 0%, 0%);
+  outline: none;
+}
