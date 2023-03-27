@@ -30,7 +30,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(cors({
-    origin: "https://backend-sj2s.onrender.com",
+    origin: "https://ui-dmxo.onrender.com",
     methods: "GET,POST,PUT,DELETE",
     credentials: true
 }));

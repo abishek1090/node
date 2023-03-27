@@ -6,7 +6,7 @@ passport.use(
 		{
 			clientID: '178073120610-37o8quh3tv2n44i41q06apg04gk7mvag.apps.googleusercontent.com',
 			clientSecret: "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",
-			callbackURL: "https://backend-sj2s.onrender.com/home",
+			callbackURL: "https://ui-dmxo.onrender.com/home",
 			scope: ["profile", "email"],
 			passReqToCallback: true
 		},
