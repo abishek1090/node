@@ -17,7 +17,7 @@ function Profile() {
   const availablePosts = useSelector(getAllPosts);
   const handleClick = async () => {
     try {
-      await axios.delete(`https://backend-sj2s.onrender.com/api/delete/${id}`);
+      await axios.delete(`https://api-wi31.onrender.com/api/delete/${id}`);
       dispatch(deletePost(id));
       setModal(false);
       setCLoseModal(!closeModal);
@@ -30,7 +30,7 @@ function Profile() {
     const getPost = async () => {
       try {
         const response = await axios.get(
-          `https://backend-sj2s.onrender.com/api/posts/${user}`
+          `https://api-wi31.onrender.com/api/posts/${user}`
         );
 
         dispatch(posts(response.data));

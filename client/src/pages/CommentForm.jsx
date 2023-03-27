@@ -21,7 +21,7 @@ function CommentForm({
     setMsgError(validate({ message: message }));
     if (inputs.message !== '') {
       try {
-        const response = await axios.post("https://backend-sj2s.onrender.com/api/comment", inputs);
+        const response = await axios.post("https://api-wi31.onrender.com/api/comment", inputs);
       }
       catch (err) {
         console.log(err);

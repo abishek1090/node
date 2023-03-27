@@ -52,7 +52,7 @@ const Register = () => {
     ) {
       try {
         const rest = await axios.post(
-          'https://backend-sj2s.onrender.com/api/auth/signup',
+          'https://api-wi31.onrender.com/api/auth/signup',
           inputs
         )
         dispatch(user(rest.data))
@@ -94,7 +94,7 @@ const Register = () => {
           }
         )
         dispatch(user(res.data.given_name))
-        window.open(`https://backend-sj2s.onrender.com/auth/google/callback`, '_self')
+        window.open(`https://api-wi31.onrender.com/auth/google/callback`, '_self')
       } catch (err) {
         console.log(err)
       }

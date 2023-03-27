@@ -37,7 +37,7 @@ const Comment = ({ _id, message, username, createdAt }) => {
     if (inputs.message !== '') {
       try {
         const response = await axios.post(
-          'https://backend-sj2s.onrender.com/api/comment',
+          'https://api-wi31.onrender.com/api/comment',
           inputs
         )
         setAvailableComments((prev) => [response.data, ...prev]);
@@ -50,14 +50,14 @@ const Comment = ({ _id, message, username, createdAt }) => {
   }
 
   useMemo(() => {
-    fetch('https://backend-sj2s.onrender.com/api/comments/' + params.id)
+    fetch('https://api-wi31.onrender.com/api/comments/' + params.id)
       .then(response => response.json())
       .then(data => setAvailableComments(data))
 
   }, [res]);
   const handleDelete = async () => {
     try {
-      await axios.post(`https://backend-sj2s.onrender.com/api/comment/delete`, { id: params.id, _id: _id }).then((data)=>{  let b=availableComments;
+      await axios.post(`https://api-wi31.onrender.com/api/comment/delete`, { id: params.id, _id: _id }).then((data)=>{  let b=availableComments;
       let a=b.splice(1,0,{_id})
       setAvailableComments(b)});
     }

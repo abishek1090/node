@@ -26,7 +26,7 @@ export const Post = () => {
     if (inputs.message !== '') {
       try {
         const response = await axios.post(
-          'https://backend-sj2s.onrender.com/api/comment',
+          'https://api-wi31.onrender.com/api/comment',
           inputs
         )
         setAvailableComments((prev)=>[response.data,...prev]);
@@ -45,13 +45,13 @@ export const Post = () => {
   }
 
   useMemo(() => {
-    fetch('https://backend-sj2s.onrender.com/api/comments/' + params.id)
+    fetch('https://api-wi31.onrender.com/api/comments/' + params.id)
       .then(response => response.json())
       .then(data => setAvailableComments(data))
 
   }, [])
   useMemo(() => {
-    fetch('https://backend-sj2s.onrender.com/api/post/' + params.id)
+    fetch('https://api-wi31.onrender.com/api/post/' + params.id)
       .then(response => response.json())
       .then(data => {
         setPost(data)

@@ -49,7 +49,7 @@ const Login = () => {
     if (username.username !== '' && password.password !== '') {
       try {
 
-        const response = await axios.post('https://backend-sj2s.onrender.com/api/auth/login', inputs, { withCredentials: true });
+        const response = await axios.post('https://api-wi31.onrender.com/api/auth/login', inputs, { withCredentials: true });
 
         dispatch(user(response.data.user.username));
         navigate("/home");
@@ -71,7 +71,7 @@ const Login = () => {
   const clientId = "178073120610-37o8quh3tv2n44i41q06apg04gk7mvag.apps.googleusercontent.com";
   const googleAuth = async () => {
     window.open(
-      `https://backend-sj2s.onrender.com/auth/google/callback`,
+      `https://api-wi31.onrender.com/auth/google/callback`,
       "_self"
     );
   };
@@ -85,7 +85,7 @@ const Login = () => {
         })
         dispatch(user(res.data.given_name));
         window.open(
-          `https://backend-sj2s.onrender.com/auth/google/callback`,
+          `https://api-wi31.onrender.com/auth/google/callback`,
           "_self"
         );
       } catch (err) {

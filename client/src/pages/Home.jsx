@@ -28,7 +28,7 @@ function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`https://backend-sj2s.onrender.com/api/posts`);
+        const res = await axios.get(`https://api-wi31.onrender.com/api/posts`);
         setAvailablePosts(res.data);
       } catch (err) {
         console.log(err)
@@ -43,7 +43,7 @@ function Home() {
     navigate("/")
   }
   const handleLogout = () => {
-    axios.post("https://backend-sj2s.onrender.com/api/logout");
+    axios.post("https://api-wi31.onrender.com/api/logout");
     localStorage.clear();
     dispatch(deleteUser());
     dispatch(deletePosts());
@@ -55,7 +55,7 @@ function Home() {
     e.preventDefault()
     try {
       const response = await axios.post(
-        `https://backend-sj2s.onrender.com/api/addpost`,
+        `https://api-wi31.onrender.com/api/addpost`,
         state
       )
       setResponse(response.data)
